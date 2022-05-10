@@ -860,7 +860,7 @@ aside.left-panel {
       content: "/\00a0"; }
 
 .right-panel header.header {
-  background: #fff;
+  background: #343a40;;
   border-bottom: 1px solid #e8e9ed;
   -webkit-box-shadow: none;
           box-shadow: none;

@@ -8,11 +8,10 @@
             <!-- Header-->
             <header id="header" class="header">
                 <div class="top-left">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="./"><img src="" alt="Logo"></a>
-                        <a class="navbar-brand hidden" href="./"><img src="" alt="Logo"></a>
+                    <!-- <div class="navbar-header">
+                        <h2>GeekTest</h2>
                         <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="top-right">
                     <div class="header-menu">
@@ -22,7 +21,7 @@
 
                         <div class="user-area dropdown float-right">
                             <div style="line-height: 50px;height: 50px;display: flex;align-items: center;">
-                                <b>Interview Task - Admin Panel</b>
+
                             </div>
                         </div>
                     </div>
@@ -37,13 +36,13 @@
                       <li class="menu-title">P2P wallet (Pay)</li>
 
                       <li >
-                          <a href="#"><i class="menu-icon fa fa-exchange"></i>Most Conversion</a>
+                          <router-link  to="/mostconversion">Most Conversion</router-link>
                       </li>
                       <li >
-                          <a href="#"><i class="menu-icon fa fa-money"></i>User Transaction Info</a>
+                          <router-link  to="/usertransactioninfo">User Transaction Info</router-link>
                       </li>
                       <li >
-                          <a href="#"><i class="menu-icon fa fa-tasks"></i>All Transaction History</a>
+                            <router-link  to="/alltransaction">All Transaction</router-link>
                       </li>
                   </ul>
               </div><!-- /.navbar-collapse -->
@@ -53,8 +52,8 @@
         <router-view :key="$route.path"></router-view>
         <div class="clearfix"></div>
 
-                  <footer class="site-footer">
-                      <div class="footer-inner bg-white">
+                  <!-- <footer class="site-footer">
+                      <div class="footer-inner">
                           <div class="row">
                               <div class="col-sm-6">
                                   Copyright &copy;  <a href="https://www.geekpicker.com/" target="_blank">Geekpicker</a>
@@ -64,7 +63,7 @@
                               </div>
                           </div>
                       </div>
-                  </footer>
+                  </footer> -->
 
               </div><!-- /#right-panel -->
       </div>
