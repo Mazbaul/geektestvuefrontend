@@ -56,6 +56,7 @@
           userData:{},
           from:'',
           to:'',
+          SendMoney:'',
           isLoaded:false
         };
       },
@@ -72,7 +73,7 @@
           const th = this
           this.axios.post('http://127.0.0.1:8000/api/send-money-without-auth?sender_id='+from+'&receiver_id='+to+'&amount='+amount).then(response => (
             th.isLoaded=true,
-            th.userData = response.data
+            th.SendMoney = response.data
 
           ))
         }
